@@ -1,1 +1,1 @@
-This repo keeps track of the config files I use in VS Code. Includes VSCodeVim configuration
+This repo keeps track of the config files I use in VS Code. Includes VSCodeVim configuration. Many of the settings are inspired by [Melkeydev](https://github.com/Melkeydev/vscode_bindings) and [Jaime González García](https://www.barbarianmeetscoding.com/).
