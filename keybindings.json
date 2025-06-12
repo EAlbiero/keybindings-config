@@ -1,5 +1,30 @@
 // Place your key bindings in this file to override the defaults
 [
+    // NAVIGATION
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
     {
         "key": "ctrl+space",
         "command": "workbench.action.terminal.focus"
@@ -32,14 +57,11 @@
     {
         "key": "shift+n",
         "command": "explorer.newFolder",
-        "when": "explorerViewletFocus"
+        "when": "explorerViewletFocus && !inputFocus"
     },
     {
         "command": "deleteFile",
         "key": "d",
         "when": "filesExplorerFocus && !inputFocus"
     }
-
-
-
 ]
