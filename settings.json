@@ -391,5 +391,23 @@
     "vim.easymotion": true,
     "vim.gdefault": true,
     "vim.foldfix": true,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "terminal.integrated.inheritEnv": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    },
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "vim.camelCaseMotion.enable": true,
+    "workbench.sideBar.location": "right"
 }
