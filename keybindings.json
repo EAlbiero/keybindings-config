@@ -12,7 +12,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+p",
+        "key": "ctrl+/ ctrl+;",
         "command": "workbench.action.togglePanel"
     },
     {
@@ -36,7 +36,7 @@
     },
     // FILE TREE
     {
-        "command": "workbench.action.toggleSidebarVisibility",
+        "runCommands": ["workbench.action.toggleSidebarVisibility","workbench.files.action.focusFilesExplorer"],
         "key": "ctrl+e"
     },
     {
@@ -63,5 +63,15 @@
         "command": "deleteFile",
         "key": "d",
         "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-extension.vim_ctrl+o",
+        "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-extension.vim_ctrl+p",
+        "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     }
 ]
